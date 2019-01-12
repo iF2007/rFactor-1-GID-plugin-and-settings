@@ -1,0 +1,86 @@
+[LCD]
+
+//LINEAR or CENTER
+MODE = CENTER
+
+ON = 100
+OFF = 100
+
+//LEDICONS  or  RpmIcon 
+UseIcon =RpmIcon
+
+
+[ELEMENTS]
+// Rect border of elements inside Texture
+// Name = X, Y, Width, Height
+// For Font Width and Height refers to a single dimension char.
+
+LCD = T, 38, 303, 285, 107, P, 0, 0
+BRAKE    =  T, 0, 278, 160, 17, P, 78, 87, HLR, V,  0, 1
+THROTTLE =  T, 0, 259, 155, 17, P, 83, 70, HLR, V,  0, 1
+
+.STEERING =  T, 449, 208, 110,  6, P, 250, 140,  C, V, -1, 1 
+
+Speed = T, 0, 430, 25, 38, P, 177, 27
+KphMphIcon = T, 426, 348, 56, 10, P, 183, 53 
+  
+Gear = T, 0, 0, 37, 52, P, 27, 38  
+ 
+
+Rpm  = T, 0, 150, 11, 17, P, 70, 4 
+  
+
+LedPersonal = T, 475, 220, 34, 41, P, 266, 4 
+LedBest = T, 475, 267, 34, 41, P, 266, 63  
+
+MiniTempIcon = T, 782, 224, 60, 20, P, 216, 26
+MiniFuelIcon = T, 782, 265, 60, 20, P, 216, 49 
+
+.Km = T, 0, 193, 11, 17, P, 0, 0
+.Trip = T, 0, 193, 11, 17, P, 0, 0
+ 
+.TimePersonal = T, 0, 475, 9, 14, P, 0, 0
+.TimeBest = T, 0, 475, 9, 14, P, 0, 0
+
+
+LedArrowUp   = T, 411, 228, 36, 26, P, 243, 11 
+LedArrowDown = T, 411, 273, 36, 26, P, 243, 70
+LedYellow = T, 408, 260, 24, 7, P, 7, 46  
+
+.WarningIcon = T, 775, 307, 40, 45, P, 0, 0
+
+.MiniATDIcon = T, 708, 381, 76, 50, P, 0, 0  
+
+RpmIcon = T, 0, 237, 160, 20, P, 78, 3, HLR   
+RpmSymmetricalIcon = T, 176, 237, 160, 20, P, 78, 3, HEI  
+
+LEDICONS = T, 176, 275, 70, 14, W, 14
+
+
+//......................
+
+
+[POSITIONS]	
+// Position Relative to LCD upper Left corner
+//FORMAT: // Element = X0, Y0  . Where X0 and Y0 are relative to LCD Position
+
+
+LED0  = 86,  6, 1, 5%
+LED1  = 105, 6, 1, 30%
+LED2  = 124, 6, 1, 45%
+LED3  = 143, 6, 1, 60%
+LED4  = 162, 6, 2, 73%
+LED5  = 181, 6, 2, 86%
+LED6  = 200, 6, 2, 90%
+LED7  = 219, 6, 4, 96.5%
+
+LEDSYM0  = 86,  6,  1, 5%
+LEDSYM1  = 105, 6,  2, 60%
+LEDSYM2  = 124, 6,  3, 80%
+LEDSYM3  = 143, 6,  4, 96.5%
+LEDSYM4  = 162, 6,  4, 96.5%
+LEDSYM5  = 181, 6,  3, 80%
+LEDSYM6  = 200, 6,  2, 60%
+LEDSYM7  = 219, 6,  1, 5%
+
+

@@ -1,0 +1,226 @@
+[LCD]
+
+//LINEAR or CENTER
+MODE = CENTER
+
+ON = 100
+OFF = 100
+
+//LEDICONS  or  RpmIcon 
+UseIcon =RpmIcon
+
+//3.0 secondi
+MaxLancetStopForSeconds = 3.0
+
+//30 Gradi al secondo
+MaxLancetReturnSpeed = 40 
+
+
+
+[ELEMENTS]
+// Rect border of elements inside Texture
+// Name = X, Y, Width, Height
+// For Font Width and Height refers to a single dimension char.
+
+//oggetto = T,x0,y0,x1,y1,P,xp,yp, [F|R,xc,yc|LR|RL|DU|UD|C| W width], A, alpha1, alpha, V, value1, value2
+
+LCD = T, 0, 0, 502, 199, P, 0, 0
+
+BRAKE    =  T, 635,  84,  27, 67, P, 171, 42,  VDU, V,  0, 1
+THROTTLE =  T, 676,  84,  27, 67, P, 303, 42,  VDU, V,  0, 1
+STEERING =  T, 549, 208, 110,  6, P, 195, 140, HAIE, V, -1, 1
+
+
+SPEED = T, 0, 208, 18, 26, P, 279, 110
+
+KphMphIcon = T, 513, 168, 56, 12, P, 84, 74
+RpmTextIcon = T, 513, 185, 19, 8, P, 393, 74
+
+
+GEAR          = T, 0, 1088, 27, 32, P, 239, 65
+
+
+.RPM          = T, 374, 1088, 11, 17, P, 451, 160  
+.RPMLIMITATOR = T, 374, 1105, 11, 17, P, 451, 160  
+
+
+LedPersonal = T, 966, 334, 62, 35, P, 174, 16
+LedBest     = T, 966, 374, 62, 35, P, 297, 16
+
+
+MiniTempIcon = T, 968, 267, 54, 18, P, 363, 169
+MiniFuelIcon = T, 968, 247, 54, 18, P, 60, 169
+.MiniTempIcon = T, 862, 259, 48, 16, P, 363, 169
+.MiniFuelIcon = T, 862, 282, 48, 16, P, 60, 169
+
+
+
+Km   = T, 374, 1123, 9, 13, P, 122, 45
+Trip = T, 374, 1123, 9, 13, P, 122, 59
+
+LocalTime = T, 374, 1123, 9, 13, P, 381, 50
+
+
+TimePersonal = T, 0, 1241, 11, 17, P, 295, 16
+
+TimeBest = T, 0, 1241, 11, 17, P, 295, 34
+
+GapPreviousCar = T, 0, 1241, 11, 17, P, 294, 148
+GapNextCar = T, 0, 1241, 11, 17, P, 294, 166
+
+
+
+FUELLancet        =  T, 862, 397, 47, 16, P, 100, 179, R, 11, 8, A, 150, 30, V, 0, 1 
+TEMPERATURELancet =  T, 865, 399, 41, 13, P, 402, 179, R, 7,  5, A, 150, 30, V, 50, 130
+
+.LedArrowUp   = T, 649, 441, 36, 26, P, 20, 20 
+.LedArrowDown = T, 511, 273, 18, 26, P, 40, 40 
+.LedYellow    = T, 646, 473, 24, 7, P, 0, 0 
+
+.WarningIcon = T, 861, 535, 50, 45, P, 0, 0
+
+.MiniATDIcon = T, 830, 601, 76, 49, P, 0, 0  
+
+.RpmIcon = T, 5, 1185, 160, 20, P, 0, 0, HEI  
+.RpmSymmetricalIcon = T, 181, 1185, 160, 20, P, 0, 0  
+
+.LEDICONS = T, 214, 1225, 69, 14, W, 14
+
+.SpeedMaxLancet = T, 626, 72, 102, 3, P, 98, 103, R, 15, 1  
+
+RPMMaxLancet = T, 626, 72, 102, 3, P, 402, 103, R, 15, 1
+
+.RPMLimitatorSector = T, 893, 728, 61, 43, P, 402, 103, R, 0, 0
+RPMLimitatorSector = T, 804, 72, 91, 49, P, 402, 103, R, 0, 0
+
+
+
+[POSITIONS]	
+// LEDs Positions Relative to LCD upper Left corner
+
+//Syntax: LED# = X0, Y0, #, %POWER
+//LED# : Numero del led va da 0 a 20
+//X0 = LED X LCD relative position
+//Y0 = LED Y LCD relative position
+//#  = Numero del LED nella Texture, va da 1 a n
+//%POWER = Percentuale di potenza massima che bisogna superare per accendere il LED
+
+
+
+//16px
+.LED0  = 80,  6, 1, 5%
+.LED1  = 96,  6, 1, 20%
+.LED2  = 112, 6, 1, 30%
+.LED3  = 128, 6, 1, 40%
+.LED4  = 144, 6, 2, 50%
+.LED5  = 160, 6, 2, 60%
+.LED6  = 176, 6, 2, 70%
+.LED7  = 192, 6, 4, 80%
+.LED8  = 208, 6, 4, 90%
+.LED9  = 224, 6, 4, 96.5%
+
+.LEDSYM0  = 80,  6, 1, 5%
+.LEDSYM1  = 96,  6, 1, 40%
+.LEDSYM2  = 112, 6, 2, 70%
+.LEDSYM3  = 128, 6, 2, 90%
+.LEDSYM4  = 144, 6, 4, 96.5%
+.LEDSYM5  = 160, 6, 4, 96.5%
+.LEDSYM6  = 176, 6, 2, 90%
+.LEDSYM7  = 192, 6, 2, 70%
+.LEDSYM8  = 208, 6, 1, 40%
+.LEDSYM9  = 224, 6, 1, 5%
+
+
+LED0  = 86,  6, 1, 5%
+LED1  = 105, 6, 1, 30%
+LED2  = 124, 6, 1, 45%
+LED3  = 143, 6, 1, 60%
+LED4  = 162, 6, 2, 73%
+LED5  = 181, 6, 2, 86%
+LED6  = 200, 6, 2, 90%
+LED7  = 219, 6, 4, 96.5%
+
+LEDSYM0  = 86,  6,  1, 5%
+LEDSYM1  = 105, 6,  2, 60%
+LEDSYM2  = 124, 6,  3, 80%
+LEDSYM3  = 143, 6,  4, 96.5%
+LEDSYM4  = 162, 6,  4, 96.5%
+LEDSYM5  = 181, 6,  3, 80%
+LEDSYM6  = 200, 6,  2, 60%
+LEDSYM7  = 219, 6,  1, 5%
+
+
+
+[RPMANALOGIC1]
+//8000
+TEXTURE =  T, 3, 294, 184, 184, P, 310, 11
+LANCET  = T, 626, 45, 102, 21, P, 92, 92, R, 15, 11, A, 210, -30, V, 0, 8000
+
+[RPMANALOGIC2]
+//10000
+TEXTURE =  T, 187, 294, 184, 184, P, 310, 11
+LANCET  = T, 626, 45, 102, 21, P, 92, 92, R, 15, 11, A, 202.5, -22.5, V, 0, 10000
+
+[RPMANALOGIC3]
+//12000
+TEXTURE =  T, 371, 294, 184, 184, P, 310, 11
+LANCET  = T, 626, 45, 102, 21, P, 92, 92, R, 15, 11, A, 198, -18, V, 0, 12000
+
+[RPMANALOGIC4]
+//14000
+TEXTURE =  T, 555, 294, 184, 184, P, 310, 11
+LANCET  = T, 626, 45, 102, 21, P, 92, 92, R, 15, 11, A, 216, -36, V, 0, 14000
+
+[RPMANALOGIC5]
+//16000
+TEXTURE =  T, 3, 478, 184, 184, P, 310, 11
+LANCET  = T, 626, 45, 102, 21, P, 92, 92, R, 15, 11, A, 210, -30, V, 0, 16000
+
+[RPMANALOGIC6]
+//20000
+TEXTURE =  T, 187, 478, 184, 184, P, 310, 11
+LANCET  = T, 626, 45, 102, 21, P, 92, 92, R, 15, 11, A, 202.5, -22.5, V, 0, 20000
+
+[RPMANALOGIC7]
+//22000
+TEXTURE =  T, 371, 478, 184, 184, P, 310, 11
+LANCET  = T, 626, 45, 102, 21, P, 92, 92, R, 15, 11, A, 198, -18, V, 0, 22000
+
+
+
+
+
+[SPEEDANALOGIC1]
+//160 km/h
+TEXTURE =  T, 3, 662, 184, 184, P, 6, 11
+LANCET  = T, 626, 45, 102, 21, P, 92, 92, R, 15, 11, A, 210, -30, V, 0, 160
+
+[SPEEDANALOGIC2]
+//200 km/h
+TEXTURE =  T, 187, 662, 184, 184, P, 6, 11
+LANCET  = T, 626, 45, 102, 21, P, 92, 92, R, 15, 11, A, 202.5, -22.5, V, 0, 200
+
+[SPEEDANALOGIC3]
+//240 km/h
+TEXTURE =  T, 371, 662, 184, 184, P, 6, 11
+LANCET  = T, 626, 45, 102, 21, P, 92, 92, R, 15, 11, A, 198, -18, V, 0, 240
+
+[SPEEDANALOGIC4]
+//280 km/h
+TEXTURE =  T, 555, 662, 184, 184, P, 6, 11
+LANCET  = T, 626, 45, 102, 21, P, 92, 92, R, 15, 11, A, 216, -36, V, 0, 280
+
+[SPEEDANALOGIC5]
+//320 km/h
+TEXTURE =  T, 3, 846, 184, 184, P, 6, 11
+LANCET  = T, 626, 45, 102, 21, P, 92, 92, R, 15, 11, A, 210, -30, V, 0, 320
+
+[SPEEDANALOGIC6]
+//360 km/h
+TEXTURE =  T, 187, 846, 184, 184, P, 6, 11
+LANCET  = T, 626, 45, 102, 21, P, 92, 92, R, 15, 11, A, 198, -18, V, 0, 360
+
+[SPEEDANALOGIC7]
+//390 km/h
+TEXTURE =  T, 371, 846, 184, 184, P, 6, 11
+LANCET  = T, 626, 45, 102, 21, P, 92, 92, R, 15, 11, A, 216, -18, V, 0, 390

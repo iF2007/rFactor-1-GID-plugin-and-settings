@@ -1,0 +1,44 @@
+[WEARS]
+
+//Delta Esterna-Centro, Centro-Esterna
+DeltaPressureShape =  5, 5
+
+[ELEMENTS]
+
+Car = T, 3, 100, 123, 195, P, 0, 0
+
+Engine = T, 136, 197, 63, 50, P, 53, 116
+
+WearEngineIcon = T, 215, 198, 50, 58, P, 38, 113
+
+FrontLeftWheel  = T, 173, 85, 108, 36, P, 8, 34
+FrontRightWheel = T, 173, 85, 108, 36, P, 88, 34
+RearLeftWheel   = T, 311, 164, 108, 36, P, 8, 154
+RearRightWheel  = T, 311, 164, 108, 36, P, 88, 154
+
+TempFrontLeftWheel  = T, 220, 0, 11, 18, HALIGN, LEFT,  P,  8,  16
+TempFrontRightWheel = T, 220, 0, 11, 18, HALIGN, RIGHT, P,  115, 16
+TempRearLeftWheel   = T, 220, 0, 11, 18, HALIGN, LEFT,  P,  8,  190
+TempRearRightWheel  = T, 220, 0, 11, 18, HALIGN, RIGHT, P,  115, 190
+
+TempFrontLeftBrake  = T, 0, 0, 8, 14, P,  49, 81
+TempFrontRightBrake = T, 0, 0, 8, 14, P,  109, 81
+TempRearLeftBrake   = T, 0, 0, 8, 14, P,  49, 126
+TempRearRightBrake  = T, 0, 0, 8, 14, P,  109, 126
+
+WearFrontLeftWheel  = T, 150, 127, 5, 43, P, 1, 27,    VDU
+WearFrontRightWheel = T, 150, 127, 5, 43, P, 117, 27,  VDU
+WearRearLeftWheel   = T, 150, 127, 5, 43, P, 1, 147,   VDU
+WearRearRightWheel  = T, 150, 127, 5, 43, P, 117, 147, VDU
+
+WearEngineNumeric    = T, 0, 0, 8, 14, P,  48, 100
+
+WaterTempNumeric = T, 0, 0, 8, 14, P,  0, 0
+OilTempNumeric   = T, 0, 0, 8, 14, P,  100, 0
+
+.PressureFrontLeftWheel  = T, 0, 0, 8, 14, P,  -150, 100
+.PressureFrontRightWheel = T, 0, 0, 8, 14, P,  -50, 100
+.PressureRearLeftWheel   = T, 0, 0, 8, 14, P,  -150,  130
+.PressureRearRightWheel  = T, 0, 0, 8, 14, P,  -50,  130
+
+

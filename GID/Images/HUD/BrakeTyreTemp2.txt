@@ -1,0 +1,43 @@
+[BRAKETYRETEMP]
+
+WearAlarm1 = 51
+WearAlarm2 = 26
+
+PrevisionLapAlarm1 = 6
+PrevisionLapAlarm2 = 4
+
+// In Celsius
+WheelTempAlarm1 = 120
+WheelTempAlarm2 = 150
+
+//In Celsius
+BrakeTempAlarm1 = 1000
+BrakeTempAlarm2 = 1200
+
+[ELEMENTS]
+// Rect border of elements inside Texture
+// Name = X, Y, Width, Height
+// For Font Width and Height refers to a single dimension char.
+
+//Icon = Brake Temp - Tyre Temp - Tyre Forecast
+Icon = T, 0, 0, 227, 113, P, 0, 0
+
+TempFrontLeftBrake  = T, 0, 119, 11, 17, P,  57,  21
+TempFrontRightBrake = T, 0, 119, 11, 17, P,  113, 21
+TempRearLeftBrake   = T, 0, 119, 11, 17, P,  57,  39
+TempRearRightBrake  = T, 0, 119, 11, 17, P,  113, 39
+
+TempFrontLeftWheel  = T, 0, 119, 11, 17, P,  168, 21
+TempFrontRightWheel = T, 0, 119, 11, 17, P,  223, 21
+TempRearLeftWheel   = T, 0, 119, 11, 17, P,  168, 39
+TempRearRightWheel  = T, 0, 119, 11, 17, P,  223, 39
+
+ForecastFrontLeftWheel  = T, 0, 119, 11, 17, P, 168,  75
+ForecastFrontRightWheel = T, 0, 119, 11, 17, P, 223, 75
+ForecastRearLeftWheel   = T, 0, 119, 11, 17, P, 168,  93
+ForecastRearRightWheel  = T, 0, 119, 11, 17, P, 223, 93
+
+WearFrontLeftWheel  = T, 0, 119, 11, 17, P,  57, 75
+WearFrontRightWheel = T, 0, 119, 11, 17, P,  113, 75
+WearRearLeftWheel   = T, 0, 119, 11, 17, P,  57, 93
+WearRearRightWheel  = T, 0, 119, 11, 17, P,  113, 93

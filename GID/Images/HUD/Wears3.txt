@@ -1,0 +1,64 @@
+[WEARS]
+
+//Delta Esterna-Centro, Centro-Esterna
+DeltaPressureShape =  5, 5
+
+[ELEMENTS]
+
+.BackGround = = T, 340, 248, 164, 196, P, 0, 0
+
+Car = T, 20, 100, 162, 195, P, 0, 0
+
+Engine = T, 211, 97, 63, 50, P, 71, 116
+
+WearEngineIcon = T, 215, 198, 50, 58, P, 56, 113
+
+FrontLeftWheel  = T, 313, 95, 112, 38, P, 25, 33
+FrontRightWheel = T, 313, 95, 112, 38, P, 109, 33
+RearLeftWheel   = T, 313, 164, 112, 38, P, 25, 153
+RearRightWheel  = T, 313, 164, 112, 38, P, 109, 153
+
+TempFrontLeftWheel  = T, 0, 0, 8, 14, HALIGN, LEFT,  P,  26,  18
+TempFrontRightWheel = T, 0, 0, 8, 14, HALIGN, RIGHT, P,  136, 18
+TempRearLeftWheel   = T, 0, 0, 8, 14, HALIGN, LEFT,  P,  26,  192
+TempRearRightWheel  = T, 0, 0, 8, 14, HALIGN, RIGHT, P,  136, 192
+
+.TempFrontLeftWheel  = T, 220, 0, 11, 18, HALIGN, LEFT,  P,  26,  15
+.TempFrontRightWheel = T, 220, 0, 11, 18, HALIGN, RIGHT, P,  136, 15
+.TempRearLeftWheel   = T, 220, 0, 11, 18, HALIGN, LEFT,  P,  26,  191
+.TempRearRightWheel  = T, 220, 0, 11, 18, HALIGN, RIGHT, P,  136, 191
+
+
+
+TempFrontLeftBrake  = T, 0, 0, 8, 14, P,  67, 81
+TempFrontRightBrake = T, 0, 0, 8, 14, P,  127, 81
+TempRearLeftBrake   = T, 0, 0, 8, 14, P,  67, 126
+TempRearRightBrake  = T, 0, 0, 8, 14, P,  127, 126
+
+
+.AllTempsFrontLeftWheel  =  T, 0, 0, 8, 14, HALIGN, RIGHT, P,  x,y 
+.AllTempsFrontRightWheel = T, 0, 0, 8, 14, HALIGN, RIGHT,  P,  x,y 
+.AllTempsRearLeftWheel   = T, 0, 0, 8, 14, HALIGN, RIGHT, P,  x,y 
+.AllTempsRearRightWheel  = T, 0, 0, 8, 14, HALIGN, RIGHT, P,  x,y 
+
+WearFrontLeftWheel  = T, 300, 227, 5, 43, P, 18, 27,    VDU
+WearFrontRightWheel = T, 300, 227, 5, 43, P, 139, 27,  VDU
+WearRearLeftWheel   = T, 300, 227, 5, 43, P, 18, 147,   VDU
+WearRearRightWheel  = T, 300, 227, 5, 43, P, 139, 147, VDU
+
+NumericWearFrontLeftWheel  = T, 0, 0, 8, 14, HALIGN, LEFT, P,  27,  52
+NumericWearFrontRightWheel = T, 0, 0, 8, 14, HALIGN, LEFT, P,  111, 52
+NumericWearRearLeftWheel   = T, 0, 0, 8, 14, HALIGN, LEFT, P,  27,  172
+NumericWearRearRightWheel  = T, 0, 0, 8, 14, HALIGN, LEFT, P,  111, 172
+
+WearEngineNumeric    = T, 0, 0, 8, 14, P,  65, 100
+
+WaterTempNumeric = T, 0, 0, 8, 14, HALIGN, RIGHT, P,  21, 103
+OilTempNumeric   = T, 0, 0, 8, 14, HALIGN, RIGHT, P,  109, 103
+
+.PressureFrontLeftWheel  = T, 0, 0, 8, 14, P,  -150, 100
+.PressureFrontRightWheel = T, 0, 0, 8, 14, P,  -50, 100
+.PressureRearLeftWheel   = T, 0, 0, 8, 14, P,  -150,  130
+.PressureRearRightWheel  = T, 0, 0, 8, 14, P,  -50,  130
+
+

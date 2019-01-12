@@ -1,0 +1,27 @@
+Configuration File: PLUGINS\GID\gidconf.txt
+DRS RFM Info
+DRS RFM File: E:\SOFTWARE\Games\F1 Simulation\rFactor\OFCR_2019_OpenBeta\rfm\rF1_2011.rfm
+HUD.DRSInfo.bEnabled 0
+HUD.DRSInfo.minLaps 0
+HUD.DRSInfo.gap 1.000000
+...........
+HUD.DRSInfo.Zones[i].DetectionPointDistance -1.000000
+HUD.DRSInfo.Zones[i].StartDistance -1.000000
+HUD.DRSInfo.Zones[i].EndDistance -1.000000
+HUD.DRSInfo.Zones[i].DetectionPointDistance -1.000000
+HUD.DRSInfo.Zones[i].StartDistance -1.000000
+HUD.DRSInfo.Zones[i].EndDistance -1.000000
+HUD.DRSInfo.Zones[i].DetectionPointDistance -1.000000
+HUD.DRSInfo.Zones[i].StartDistance -1.000000
+HUD.DRSInfo.Zones[i].EndDistance -1.000000
+HUD.DRSInfo.Zones[i].DetectionPointDistance -1.000000
+HUD.DRSInfo.Zones[i].StartDistance -1.000000
+HUD.DRSInfo.Zones[i].EndDistance -1.000000
+HUD.DRSInfo.Zones[i].DetectionPointDistance -1.000000
+HUD.DRSInfo.Zones[i].StartDistance -1.000000
+HUD.DRSInfo.Zones[i].EndDistance -1.000000
+...........
+HUD.DRSInfo.DRSPort 0
+HUD.DRSInfo.KERSPort 0
+HUD.DRSInfo.bBroadCast 0
+HUD.KERSInfo.bBroadCast 0

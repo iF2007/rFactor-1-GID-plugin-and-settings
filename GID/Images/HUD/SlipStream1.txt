@@ -1,0 +1,40 @@
+[SLIPSTREAM]
+
+. in Km/h
+minSpeed = 100
+maxSpeed = 240
+
+. in m
+.minDistance = 15
+.maxDistance = 70
+
+minDistance = 15
+maxDistance = 110
+
+UseGAP = FALSE
+
+. GAP in seconds
+GAP = 1.1
+
+Offset = 2
+
+Level1 = 0.15
+Level2 = 0.35
+Level3 = 0.55
+Level4 = 0.75
+Level5 = 0.80
+
+.Level1 = 0.15
+.Level2 = 0.25
+.Level3 = 0.45
+.Level4 = 0.65
+.Level5 = 0.80
+
+[ELEMENTS]
+
+SLIPSTREAM  = T, 5, 19, 306, 102, P, 0, 0
+
+.SLIPSTREAMVALUE =  T, 0, 136, 11, 17, P, 37, 98
+
+
+

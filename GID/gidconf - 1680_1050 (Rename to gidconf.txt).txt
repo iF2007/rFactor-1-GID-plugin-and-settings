@@ -1,0 +1,601 @@
+[GENERAL]
+
+//Flickering. 0 = Normal, 1 = Mode 1, 2 = Mode 2
+FlickeringMode =2
+
+UseSharedMemory = 1
+//$$SPECTATOR_MODE$$,
+TeamMembers = $$$SPECTATOR_MODE$$,Fazerbox
+
+
+//ModeMap = [ OFF | FIX | ROTATION ] 
+ModeMap =ROTATION
+
+
+// pixels:meters. Default 100:200, 100 Pixels = 200 Meters
+ZOOM =100:200
+
+//SkipTrackPoints . Default: 5 ( 0 = No SKIP)
+SkipTrackPoints = 3
+
+
+//Names  [ 0 | 1 | 2 | 3 ] 0=NO ; 1=Name; 2=Number; 3 = Number+Name
+Names =1
+
+//Frame =  [ON | OFF]
+Frame =OFF
+
+//FrameColor AA599CD4 - AARRGGBB
+FrameColor = AA599CD4
+
+//FrameMargin = 10
+FrameMargin = 20
+
+//ContinousTime  0 = NO, 1 = TRUE
+ContinousTime = 1
+
+//LimitVisibleCars numero vetture visibili oltre la mia, la precedente, la successiva. 0 = tutte le vetture
+LimitVisibleCars = 50
+
+//Show my name  0=NO ; 1=Yes
+ShowMyName = 0
+
+//VerticalAlign: Top Bottom
+VerticalAlign = Top
+
+//HorizontalAlign: Left Right
+HorizontalAlign = Left
+
+//OffsetX: in Pixel
+OffsetX =12
+
+//OffsetY: in Pixel
+OffsetY =45.619049%
+
+//MapWidth in Pixel
+MapWidth =384
+
+//MapHeight in Pixel
+MapHeight =358
+
+//MapFading = [YES | NO=Default]
+MapFading =NO
+
+MapPitLaneDashed =NO
+//FFFFFF00 = Dashed.   FFFFFFFF = No DASHED -Default
+MapLinePattern  =0xFFFFFF00
+MapPatternScale = 1.0
+
+MapBackground=NO
+
+FLASH_ON = 200
+FLASH_OFF = 100
+FLASH_COLOR = 00FFFFFF
+
+
+//Separatori per nome Team nel nome del Pilota
+CharsTeamNameFilter = "]}~"
+OpenClosedBrackets = "[](){}<>"
+
+
+
+[KEYS]
+//Use GIDKeyboard.exe to discover key code
+//  VALID VALUES:
+//    (Letters and numbers and punctuations)
+//    a, b, c, ... z, A, B, C...., Z, 0, 1, ..... 9  	
+
+//    (Numeric PAD)
+//    VK_NUMPAD0, VK_NUMPAD1.....VK_NUMPAD9, VK_MULTIPLY, VK_ADD, VK_SEPARATOR, VK_SUBTRACT, VK_DECIMAL,VK_DIVIDE
+    
+//   (Functional Keys)
+//    VK_F1, VK_F2,...., VK_F22
+
+//   (OtherKeys: TILDE = ~ )
+//   VK_SEMICOLON, VK_PLUS, VK_COMMA, VK_MINUS, VK_PERIOD, VK_SLASH, VK_TILDE, VK_SQUAREOPEN, VK_BACKSLASH, VK_SQUARECLOSED, VK_QUOTE        
+
+PeriodRepeatedKey = 200
+
+
+KeyboardKeyMode = VK_NUMPAD0, EventDown
+KeyboardKeyZoomIn = VK_DECIMAL, EventDown
+KeyboardKeyZoomOut = CTRL + VK_DECIMAL, EventDown
+KeyboardKeyMapMoveLeft = ALT + VK_LEFT
+KeyboardKeyMapMoveRight = ALT + VK_RIGHT
+KeyboardKeyMapMoveUp = ALT + VK_UP
+KeyboardKeyMapMoveDown = ALT + VK_DOWN
+KeyboardKeyMapIncreaseWindowWidth = SHIFT + VK_RIGHT
+KeyboardKeyMapDecreaseWindowWidth = SHIFT + VK_LEFT
+KeyboardKeyMapIncreaseWindowHeight = SHIFT + VK_DOWN
+KeyboardKeyMapDecreaseWindowHeight = SHIFT + VK_UP
+KeyboardKeyNames = VK_PAUSE, EventDown
+KeyboardKeyFrame = ALT + VK_DECIMAL, EventDown
+KeyboardKeyMapResetPosition = SHIFT + VK_PAUSE, EventDown
+KeyboardKeyMapSectorColor = ALT + VK_PAUSE, EventDown
+KeyboardKeyMapNextTrack = ALT + VK_NUMPAD0, EventDown
+KeyboardKeyInfo = VK_PRINT, EventDown
+KeyboardKeyIcons = CTRL + 1, EventDown
+KeyboardKeyText = CTRL + 2, EventDown
+KeyboardKeyHud = CTRL + VK_SPACE, EventDown
+KeyboardKeyEditHud = SHIFT + CTRL + VK_SPACE, EventDown
+KeyboardKeyLeft = VK_LEFT
+KeyboardKeyRight = VK_RIGHT
+KeyboardKeyUp = VK_UP
+KeyboardKeyDown = VK_DOWN
+KeyboardKeyCommand = VK_RETURN
+KeyboardKeyMenu = ALT + VK_SPACE, EventDown
+KeyboardKeyChangeFontBox = ALT + VK_RETURN, EventDown
+
+
+KeyboardKeyCTRLLEFT  = CTRL + VK_LEFT
+KeyboardKeyCTRLRIGHT = CTRL + VK_RIGHT
+KeyboardKeyCTRLUP    = CTRL + VK_UP
+KeyboardKeyCTRLDOWN  = CTRL + VK_DOWN
+
+DRS = Controller, 1, Button, 3, EventDown
+DRSOFF = 
+.DRSOFF = Controller, 1, Button, 4, EventDown
+
+KERS = Controller, 1, Button, 2, EventDown, EventUp 
+.KERSOFF = Controller, 1, Button, 2, EventDown
+
+//Remove "." and assign a keyboard key or controller button
+.GRIDMODE  = VK_F12, EventDown
+.GRIDCLASS = Controller, 1, Button, 4, EventDown
+
+
+
+[MAPINBOX]
+
+//ModeMap = [ OFF | FIX ] 
+ModeMap =FIX
+
+//Names  [ 0 | 1 | 2 | 3 ] 0=NO ; 1=Name; 2=Number; 3 = Number+Name
+Names =1
+
+//OffsetX: in Pixel
+OffsetX =47.738094%
+
+//OffsetY: in Pixel
+OffsetY =58.285713%
+
+//MapWidth in Pixel
+MapWidth =50.595238%
+
+//MapHeight in Pixel
+MapHeight =348
+
+[TRACK]
+//Vetture a meno di LineUpperCarDistance metri da me saranno visualizzate sotto la Linea Del Tracciato
+//Default 100
+LineUpperCarDistance = 0
+
+//Dimensione Linea Tracciato
+TrackLineWidth = 3.0
+
+//Colore Tracciato FFFFFFC4 - AARRGGBB
+//TrackColor = FFFFFFC4
+TrackColor = FFBADF00
+
+//[0 = NO|1 = YES]
+DifferentSectorColor =1
+
+Sector1Color = FFBADF00
+Sector2Color = FFDE8017
+Sector3Color = FF8595E5
+
+
+//Colore Tracciati secondari - PIT FF00BD00 - AARRGGBB
+SecondaryTrackColor = FF00BD00
+
+[EXTRAINFO]
+ExtraInfo=ON
+HorizontalAlign =LEFT
+VerticalAlign =TOP
+
+
+
+[IMAGES]
+IconsDir =IMAGE15
+TextDir  =TEXT1 
+
+
+//ShowCarNumber = 3 Visualizza il numero della posizione nelle prime tre vetture. Il file Grafico corrispondente deve essere presente nella directory images
+ShowCarNumber = 50
+
+
+[HUD]
+HudInfo=ON
+
+Language=DEFAULT
+
+WGL =WGL1 
+
+
+WEAR=Wears3
+FUEL = FUEL1
+TEMPERATURE = TEMP1
+METEO = METEO2
+
+LCD =LCD_DEF3
+
+//0=KMH o 1=MPH
+LCD_MphKm =0
+
+
+ATD = ATD1
+
+BRAKETYRETEMP =BRAKETYRETEMP1
+BRAKETEST =BRAKETEST1
+SLIPSTREAM =SLIPSTREAM1
+KERSDRS = KERSDRS
+
+.Percentage of MAX RPM to activate RPM
+Gear_MinRPM = 25
+
+.Percentage of MAX RPM to activate flashing
+Gear_RPMLimitator = 97.5
+
+.StartingLights_Mode = [AUTO | TELEMETRY | SYNCRO1 | SYNCRO2 ]
+.AUTO = Plugin try to show Light syncronized with rFactor. May Not work
+.TELEMETRY= Plugin reads Lights status from Telemetry. Delay may Occurs but it always Works
+.SYNCRO1 : synchronized1
+.SYNCRO2 : synchronized2
+StartingLights_Mode=AUTO
+
+.StartingLights_Style= [F1 | DEFAULT ]  
+.F1 = Black Lights on start
+.DEFAULT = Green Lights on start
+StartingLights_Style=DEFAULT
+
+StartingLights_Rows=2
+
+PitSpeedLimitRace = 150;
+PitSpeedLimitNormal = 150;
+
+FuelLaps_Alert = 5
+FuelLiters_Alert = 5
+LCD_LitersGallons=0
+LCD_TempUnit=0
+UniqueLayout=YES
+
+//0 = Relative to ME.  1 = Relative to Leader.  2 = Gap with Previous car
+Grid_Mode =1
+Grid_Maxspeed =YES
+Grid_FilterClass =ALL
+
+//Grid_Classes0-20 = <NAME in GRID Object>, <FILTERS List comma separated>
+//Filter rules:  
+// <string>	 : Class name equals to <string>
+// #<string>     : Class name contains <string>
+// @		 : Class name equals to my class car
+// *		 : All Cars
+// $#<string>    : Driver name contains <string>
+// $<string>     : Driver name equals to <string>
+// Example. GT1, ES_GT1, #GT1.  Group name is "GT1" and Cars belong to this group if class name is equals to "ES_GT1" or contains string "GT1" 
+Grid_Classes0  = MYCLASS, @
+Grid_Classes1  = GT1, ES_GT1, #GT1
+Grid_Classes2  = GT2, ES_GT2, #GT2
+Grid_Classes3  = P1, ES_P1, #P1
+Grid_Classes4  = P2, ES_P2, #P2
+.Grid_Classes5  = M, $#Faz
+.Grid_Classes6  = Fazerbox, $fazerbox
+
+
+[rF_HighVoltage]
+//KERS & DRS
+
+DRSFile = rF1_2011.rfm
+
+.Velocità minima in Km/h sotto la quale il KERS non è attivabile 
+KersMinSpeed = 0
+
+DRSBrakeLevel = 0.55
+
+
+[HUD_BOX]  
+=========================================================================================
+Box1=Pos, LEFT, TOP, SHOW, {FontSize=2, FontColor=0, ShowPlace}
+Box2=Grid, LEFT, 12.714844%, SHOW, {FontSize=0, FontColor=1, Zoom=1.00, MaxLengthName=16, Rows=30, NumDrivers=10, ShowGrid}
+Box3=Laps, RIGHT, 1%, SHOW, {FontSize=2, FontColor=0, ShowLaps}
+Box4=BEST, RIGHT, 6%, SHOW, {FontSize=0, FontColor=1, StopTimeForSeconds=10, MaxLengthName=11, ShowPersonalBestLap, ShowBestLap, ShowPersonalLastLap}
+Box5=CURRENT, RIGHT, 16%, SHOW, {FontSize=0, FontColor=1, MaxLengthName=11, ShowCurrentTime, ShowPersonalGap, ShowBestGap}
+Box6=SECTORS, 80.369049%, 49.542858%, HIDE, {FontSize=0, FontColor=1, MaxLengthName=8, ShowSectors}
+Box7=Timer, 39.9%, 0.0%, SHOW, {FontSize=0, FontColor=3, ShowTimer}
+Box8=LCD, CENTER, 63.733334%, SHOW, {FontSize=0, FontColor=1, ShowLCD}
+Box9=ATD, RIGHT, 60.9524%, SHOW, {FontSize=0, FontColor=1, DeltaTime=0.20%, ShowATD}
+Box10=TEMPS, RIGHT, 80%, SHOW, {FontSize=0, FontColor=1, ShowTemps}
+Box11=FUEL, LEFT, 80%, SHOW, {FontSize=0, FontColor=1, ShowFuel}
+Box13=KM, 40.640625%, 94.746094%, SHOW, {FontSize=0, FontColor=1, ShowKM}
+Box14=TIME, 40%, 2%, SHOW, {FontSize=0, FontColor=6, ShowLocalTime}
+Box15=MIXED, RIGHT, 40%, HIDE, {FontSize=0, FontColor=1, MaxLengthName=11, StopTimeForSeconds=10, ShowPersonalMixedSectorGap, ShowBestMixedSectorGap, ShowPersonalGap, ShowBestGap}
+Box16=WEAR, RIGHT, 28.000000%, SHOW, {FontSize=0, FontColor=1, ShowWear}
+Box17=WGL, CENTER, 10%, SHOW, {FontSize=0, FontColor=1, ShowWGL}
+Box18=METEO, 70%, 6%, HIDE, {FontSize=0, FontColor=1, ShowMeteo}
+Box19=BRAKETEMP, 20%, 1%, SHOW, {FontSize=0, FontColor=1, Zoom=1.00, ShowBrakeTyreTemp}
+Box20=BRAKETEST, 62%, 1%, SHOW, {FontSize=0, FontColor=1, Zoom=1.00, ShowBrakeTest}
+Box21=STARTINGLIGHT, CENTER, 30%, SHOW, {FontSize=0, FontColor=1, ShowStartingLights}
+Box22=SLIPSTREAM, CENTER, 20%, SHOW, {FontSize=0, FontColor=1, Zoom=1.00, ShowSlipStream}
+Box23=KERSDRS, 64.297623%, 65.733330%, HIDE, {FontSize=0, FontColor=1, ShowKersDrs}
+
+
+[HUD_TESTDAY]
+=========================================================================================
+Box1=Pos, LEFT, TOP, SHOW, {FontSize=2, FontColor=0, ShowPlace}
+Box2=Grid, LEFT, 12.714844%, SHOW, {FontSize=0, FontColor=1, Zoom=1.00, MaxLengthName=16, Rows=30, NumDrivers=10, ShowGrid}
+Box3=Laps, RIGHT, 1%, SHOW, {FontSize=2, FontColor=0, ShowLaps}
+Box4=BEST, RIGHT, 6%, SHOW, {FontSize=0, FontColor=1, StopTimeForSeconds=10, MaxLengthName=11, ShowPersonalBestLap, ShowBestLap, ShowPersonalLastLap}
+Box5=CURRENT, RIGHT, 16%, SHOW, {FontSize=0, FontColor=1, MaxLengthName=11, ShowCurrentTime, ShowPersonalGap, ShowBestGap}
+Box6=SECTORS, 80.369049%, 49.542858%, HIDE, {FontSize=0, FontColor=1, MaxLengthName=8, ShowSectors}
+Box7=Timer, 39.9%, 0.0%, SHOW, {FontSize=0, FontColor=3, ShowTimer}
+Box8=LCD, CENTER, 63.733334%, SHOW, {FontSize=0, FontColor=1, ShowLCD}
+Box9=ATD, RIGHT, 60.9524%, SHOW, {FontSize=0, FontColor=1, DeltaTime=0.20%, ShowATD}
+Box10=TEMPS, RIGHT, 80%, SHOW, {FontSize=0, FontColor=1, ShowTemps}
+Box11=FUEL, LEFT, 80%, SHOW, {FontSize=0, FontColor=1, ShowFuel}
+Box13=KM, 40.640625%, 94.746094%, SHOW, {FontSize=0, FontColor=1, ShowKM}
+Box14=TIME, 40%, 2%, SHOW, {FontSize=0, FontColor=6, ShowLocalTime}
+Box15=MIXED, RIGHT, 40%, HIDE, {FontSize=0, FontColor=1, MaxLengthName=11, StopTimeForSeconds=10, ShowPersonalMixedSectorGap, ShowBestMixedSectorGap, ShowPersonalGap, ShowBestGap}
+Box16=WEAR, RIGHT, 28.000000%, SHOW, {FontSize=0, FontColor=1, ShowWear}
+Box17=WGL, CENTER, 10%, SHOW, {FontSize=0, FontColor=1, ShowWGL}
+Box18=METEO, 70%, 6%, HIDE, {FontSize=0, FontColor=1, ShowMeteo}
+Box19=BRAKETEMP, 20%, 1%, SHOW, {FontSize=0, FontColor=1, Zoom=1.00, ShowBrakeTyreTemp}
+Box20=BRAKETEST, 62%, 1%, SHOW, {FontSize=0, FontColor=1, Zoom=1.00, ShowBrakeTest}
+Box21=STARTINGLIGHT, CENTER, 30%, SHOW, {FontSize=0, FontColor=1, ShowStartingLights}
+Box22=SLIPSTREAM, CENTER, 20%, SHOW, {FontSize=0, FontColor=1, Zoom=1.00, ShowSlipStream}
+Box23=KERSDRS, 64.297623%, 65.733330%, HIDE, {FontSize=0, FontColor=1, ShowKersDrs}
+
+[HUD_PRACTICE]
+=========================================================================================
+Box1=Pos, LEFT, TOP, SHOW, {FontSize=2, FontColor=0, ShowPlace}
+Box2=Grid, LEFT, 12.714844%, SHOW, {FontSize=0, FontColor=1, Zoom=1.00, MaxLengthName=16, Rows=30, NumDrivers=10, ShowGrid}
+Box3=Laps, RIGHT, 1%, SHOW, {FontSize=2, FontColor=0, ShowLaps}
+Box4=BEST, RIGHT, 6%, SHOW, {FontSize=0, FontColor=1, StopTimeForSeconds=10, MaxLengthName=11, ShowPersonalBestLap, ShowBestLap, ShowPersonalLastLap}
+Box5=CURRENT, RIGHT, 16%, SHOW, {FontSize=0, FontColor=1, MaxLengthName=11, ShowCurrentTime, ShowPersonalGap, ShowBestGap}
+Box6=SECTORS, 80.369049%, 49.542858%, HIDE, {FontSize=0, FontColor=1, MaxLengthName=8, ShowSectors}
+Box7=Timer, 39.9%, 0.0%, SHOW, {FontSize=0, FontColor=3, ShowTimer}
+Box8=LCD, CENTER, 63.733334%, SHOW, {FontSize=0, FontColor=1, ShowLCD}
+Box9=ATD, RIGHT, 60.9524%, SHOW, {FontSize=0, FontColor=1, DeltaTime=0.20%, ShowATD}
+Box10=TEMPS, RIGHT, 80%, SHOW, {FontSize=0, FontColor=1, ShowTemps}
+Box11=FUEL, LEFT, 80%, SHOW, {FontSize=0, FontColor=1, ShowFuel}
+Box13=KM, 40.640625%, 94.746094%, SHOW, {FontSize=0, FontColor=1, ShowKM}
+Box14=TIME, 40%, 2%, SHOW, {FontSize=0, FontColor=6, ShowLocalTime}
+Box15=MIXED, RIGHT, 40%, HIDE, {FontSize=0, FontColor=1, MaxLengthName=11, StopTimeForSeconds=10, ShowPersonalMixedSectorGap, ShowBestMixedSectorGap, ShowPersonalGap, ShowBestGap}
+Box16=WEAR, RIGHT, 28.000000%, SHOW, {FontSize=0, FontColor=1, ShowWear}
+Box17=WGL, CENTER, 10%, SHOW, {FontSize=0, FontColor=1, ShowWGL}
+Box18=METEO, 70%, 6%, HIDE, {FontSize=0, FontColor=1, ShowMeteo}
+Box19=BRAKETEMP, 20%, 1%, SHOW, {FontSize=0, FontColor=1, Zoom=1.00, ShowBrakeTyreTemp}
+Box20=BRAKETEST, 62%, 1%, SHOW, {FontSize=0, FontColor=1, Zoom=1.00, ShowBrakeTest}
+Box21=STARTINGLIGHT, CENTER, 30%, SHOW, {FontSize=0, FontColor=1, ShowStartingLights}
+Box22=SLIPSTREAM, CENTER, 20%, SHOW, {FontSize=0, FontColor=1, Zoom=1.00, ShowSlipStream}
+Box23=KERSDRS, 64.297623%, 65.733330%, HIDE, {FontSize=0, FontColor=1, ShowKersDrs}
+
+
+[HUD_QUALIFY]
+=========================================================================================
+Box1=Pos, LEFT, TOP, SHOW, {FontSize=2, FontColor=0, ShowPlace}
+Box2=Grid, LEFT, 12.714844%, SHOW, {FontSize=0, FontColor=1, Zoom=1.00, MaxLengthName=16, Rows=30, NumDrivers=10, ShowGrid}
+Box3=Laps, RIGHT, 1%, SHOW, {FontSize=2, FontColor=0, ShowLaps}
+Box4=BEST, RIGHT, 6%, SHOW, {FontSize=0, FontColor=1, StopTimeForSeconds=10, MaxLengthName=11, ShowPersonalBestLap, ShowBestLap, ShowPersonalLastLap}
+Box5=CURRENT, RIGHT, 16%, SHOW, {FontSize=0, FontColor=1, MaxLengthName=11, ShowCurrentTime, ShowPersonalGap, ShowBestGap}
+Box6=SECTORS, 80.369049%, 49.542858%, HIDE, {FontSize=0, FontColor=1, MaxLengthName=8, ShowSectors}
+Box7=Timer, 39.9%, 0.0%, SHOW, {FontSize=0, FontColor=3, ShowTimer}
+Box8=LCD, CENTER, 63.733334%, SHOW, {FontSize=0, FontColor=1, ShowLCD}
+Box9=ATD, RIGHT, 60.9524%, SHOW, {FontSize=0, FontColor=1, DeltaTime=0.20%, ShowATD}
+Box10=TEMPS, RIGHT, 80%, SHOW, {FontSize=0, FontColor=1, ShowTemps}
+Box11=FUEL, LEFT, 80%, SHOW, {FontSize=0, FontColor=1, ShowFuel}
+Box13=KM, 40.640625%, 94.746094%, SHOW, {FontSize=0, FontColor=1, ShowKM}
+Box14=TIME, 40%, 2%, SHOW, {FontSize=0, FontColor=6, ShowLocalTime}
+Box15=MIXED, RIGHT, 40%, HIDE, {FontSize=0, FontColor=1, MaxLengthName=11, StopTimeForSeconds=10, ShowPersonalMixedSectorGap, ShowBestMixedSectorGap, ShowPersonalGap, ShowBestGap}
+Box16=WEAR, RIGHT, 28.000000%, SHOW, {FontSize=0, FontColor=1, ShowWear}
+Box17=WGL, CENTER, 10%, SHOW, {FontSize=0, FontColor=1, ShowWGL}
+Box18=METEO, 70%, 6%, HIDE, {FontSize=0, FontColor=1, ShowMeteo}
+Box19=BRAKETEMP, 20%, 1%, SHOW, {FontSize=0, FontColor=1, Zoom=1.00, ShowBrakeTyreTemp}
+Box20=BRAKETEST, 62%, 1%, SHOW, {FontSize=0, FontColor=1, Zoom=1.00, ShowBrakeTest}
+Box21=STARTINGLIGHT, CENTER, 30%, SHOW, {FontSize=0, FontColor=1, ShowStartingLights}
+Box22=SLIPSTREAM, CENTER, 20%, SHOW, {FontSize=0, FontColor=1, Zoom=1.00, ShowSlipStream}
+Box23=KERSDRS, 64.297623%, 65.733330%, HIDE, {FontSize=0, FontColor=1, ShowKersDrs}
+
+
+[HUD_WARMUP]
+=========================================================================================
+Box1=Pos, LEFT, TOP, SHOW, {FontSize=2, FontColor=0, ShowPlace}
+Box2=Grid, LEFT, 12.714844%, SHOW, {FontSize=0, FontColor=1, Zoom=1.00, MaxLengthName=16, Rows=30, NumDrivers=10, ShowGrid}
+Box3=Laps, RIGHT, 1%, SHOW, {FontSize=2, FontColor=0, ShowLaps}
+Box4=BEST, RIGHT, 6%, SHOW, {FontSize=0, FontColor=1, StopTimeForSeconds=10, MaxLengthName=11, ShowPersonalBestLap, ShowBestLap, ShowPersonalLastLap}
+Box5=CURRENT, RIGHT, 16%, SHOW, {FontSize=0, FontColor=1, MaxLengthName=11, ShowCurrentTime, ShowPersonalGap, ShowBestGap}
+Box6=SECTORS, 80.369049%, 49.542858%, HIDE, {FontSize=0, FontColor=1, MaxLengthName=8, ShowSectors}
+Box7=Timer, 39.9%, 0.0%, SHOW, {FontSize=0, FontColor=3, ShowTimer}
+Box8=LCD, CENTER, 63.733334%, SHOW, {FontSize=0, FontColor=1, ShowLCD}
+Box9=ATD, RIGHT, 60.9524%, SHOW, {FontSize=0, FontColor=1, DeltaTime=0.20%, ShowATD}
+Box10=TEMPS, RIGHT, 80%, SHOW, {FontSize=0, FontColor=1, ShowTemps}
+Box11=FUEL, LEFT, 80%, SHOW, {FontSize=0, FontColor=1, ShowFuel}
+Box13=KM, 40.640625%, 94.746094%, SHOW, {FontSize=0, FontColor=1, ShowKM}
+Box14=TIME, 40%, 2%, SHOW, {FontSize=0, FontColor=6, ShowLocalTime}
+Box15=MIXED, RIGHT, 40%, HIDE, {FontSize=0, FontColor=1, MaxLengthName=11, StopTimeForSeconds=10, ShowPersonalMixedSectorGap, ShowBestMixedSectorGap, ShowPersonalGap, ShowBestGap}
+Box16=WEAR, RIGHT, 28.000000%, SHOW, {FontSize=0, FontColor=1, ShowWear}
+Box17=WGL, CENTER, 10%, SHOW, {FontSize=0, FontColor=1, ShowWGL}
+Box18=METEO, 70%, 6%, HIDE, {FontSize=0, FontColor=1, ShowMeteo}
+Box19=BRAKETEMP, 20%, 1%, SHOW, {FontSize=0, FontColor=1, Zoom=1.00, ShowBrakeTyreTemp}
+Box20=BRAKETEST, 62%, 1%, SHOW, {FontSize=0, FontColor=1, Zoom=1.00, ShowBrakeTest}
+Box21=STARTINGLIGHT, CENTER, 30%, SHOW, {FontSize=0, FontColor=1, ShowStartingLights}
+Box22=SLIPSTREAM, CENTER, 20%, SHOW, {FontSize=0, FontColor=1, Zoom=1.00, ShowSlipStream}
+Box23=KERSDRS, 64.297623%, 65.733330%, HIDE, {FontSize=0, FontColor=1, ShowKersDrs}
+
+[HUD_RACE]
+=========================================================================================
+Box1=Pos, LEFT, TOP, SHOW, {FontSize=2, FontColor=0, ShowPlace}
+Box2=Grid, LEFT, 12.714844%, SHOW, {FontSize=0, FontColor=1, Zoom=1.00, MaxLengthName=16, Rows=30, NumDrivers=10, ShowGrid}
+Box3=Laps, RIGHT, 1%, SHOW, {FontSize=2, FontColor=0, ShowLaps}
+Box4=BEST, RIGHT, 6%, SHOW, {FontSize=0, FontColor=1, StopTimeForSeconds=10, MaxLengthName=11, ShowPersonalBestLap, ShowBestLap, ShowPersonalLastLap}
+Box5=CURRENT, RIGHT, 16%, SHOW, {FontSize=0, FontColor=1, MaxLengthName=11, ShowCurrentTime, ShowPersonalGap, ShowBestGap}
+Box6=SECTORS, 80.369049%, 49.542858%, HIDE, {FontSize=0, FontColor=1, MaxLengthName=8, ShowSectors}
+Box7=Timer, 39.9%, 0.0%, SHOW, {FontSize=0, FontColor=3, ShowTimer}
+Box8=LCD, CENTER, 63.733334%, SHOW, {FontSize=0, FontColor=1, ShowLCD}
+Box9=ATD, RIGHT, 60.9524%, SHOW, {FontSize=0, FontColor=1, DeltaTime=0.20%, ShowATD}
+Box10=TEMPS, RIGHT, 80%, SHOW, {FontSize=0, FontColor=1, ShowTemps}
+Box11=FUEL, LEFT, 80%, SHOW, {FontSize=0, FontColor=1, ShowFuel}
+Box13=KM, 40.640625%, 94.746094%, SHOW, {FontSize=0, FontColor=1, ShowKM}
+Box14=TIME, 40%, 2%, SHOW, {FontSize=0, FontColor=6, ShowLocalTime}
+Box15=MIXED, RIGHT, 40%, HIDE, {FontSize=0, FontColor=1, MaxLengthName=11, StopTimeForSeconds=10, ShowPersonalMixedSectorGap, ShowBestMixedSectorGap, ShowPersonalGap, ShowBestGap}
+Box16=WEAR, RIGHT, 28.000000%, SHOW, {FontSize=0, FontColor=1, ShowWear}
+Box17=WGL, CENTER, 10%, SHOW, {FontSize=0, FontColor=1, ShowWGL}
+Box18=METEO, 70%, 6%, HIDE, {FontSize=0, FontColor=1, ShowMeteo}
+Box19=BRAKETEMP, 20%, 1%, SHOW, {FontSize=0, FontColor=1, Zoom=1.00, ShowBrakeTyreTemp}
+Box20=BRAKETEST, 62%, 1%, SHOW, {FontSize=0, FontColor=1, Zoom=1.00, ShowBrakeTest}
+Box21=STARTINGLIGHT, CENTER, 30%, SHOW, {FontSize=0, FontColor=1, ShowStartingLights}
+Box22=SLIPSTREAM, CENTER, 20%, SHOW, {FontSize=0, FontColor=1, Zoom=1.00, ShowSlipStream}
+Box23=KERSDRS, 64.297623%, 65.733330%, HIDE, {FontSize=0, FontColor=1, ShowKersDrs}
+
+
+
+[HUD_BOX_DEFAULT]
+=========================================================================================
+Box1=Pos, LEFT, TOP, SHOW, {FontSize=2, FontColor=0, ShowPlace}
+Box2=Grid, LEFT, 12.714844%, SHOW, {FontSize=0, FontColor=1, Zoom=1.00, MaxLengthName=16, Rows=30, NumDrivers=10, ShowGrid}
+Box3=Laps, RIGHT, 1%, SHOW, {FontSize=2, FontColor=0, ShowLaps}
+Box4=BEST, RIGHT, 6%, SHOW, {FontSize=0, FontColor=1, StopTimeForSeconds=10, MaxLengthName=11, ShowPersonalBestLap, ShowBestLap, ShowPersonalLastLap}
+Box5=CURRENT, RIGHT, 16%, SHOW, {FontSize=0, FontColor=1, MaxLengthName=11, ShowCurrentTime, ShowPersonalGap, ShowBestGap}
+Box6=SECTORS, 80.369049%, 49.542858%, HIDE, {FontSize=0, FontColor=1, MaxLengthName=8, ShowSectors}
+Box7=Timer, 39.9%, 0.0%, SHOW, {FontSize=0, FontColor=3, ShowTimer}
+Box8=LCD, CENTER, 63.733334%, SHOW, {FontSize=0, FontColor=1, ShowLCD}
+Box9=ATD, RIGHT, 60.9524%, SHOW, {FontSize=0, FontColor=1, DeltaTime=0.20%, ShowATD}
+Box10=TEMPS, RIGHT, 80%, SHOW, {FontSize=0, FontColor=1, ShowTemps}
+Box11=FUEL, LEFT, 80%, SHOW, {FontSize=0, FontColor=1, ShowFuel}
+Box13=KM, 40.640625%, 94.746094%, SHOW, {FontSize=0, FontColor=1, ShowKM}
+Box14=TIME, 40%, 2%, SHOW, {FontSize=0, FontColor=6, ShowLocalTime}
+Box15=MIXED, RIGHT, 40%, HIDE, {FontSize=0, FontColor=1, MaxLengthName=11, StopTimeForSeconds=10, ShowPersonalMixedSectorGap, ShowBestMixedSectorGap, ShowPersonalGap, ShowBestGap}
+Box16=WEAR, RIGHT, 28.000000%, SHOW, {FontSize=0, FontColor=1, ShowWear}
+Box17=WGL, CENTER, 10%, SHOW, {FontSize=0, FontColor=1, ShowWGL}
+Box18=METEO, 70%, 6%, HIDE, {FontSize=0, FontColor=1, ShowMeteo}
+Box19=BRAKETEMP, 20%, 1%, SHOW, {FontSize=0, FontColor=1, Zoom=1.00, ShowBrakeTyreTemp}
+Box20=BRAKETEST, 62%, 1%, SHOW, {FontSize=0, FontColor=1, Zoom=1.00, ShowBrakeTest}
+Box21=STARTINGLIGHT, CENTER, 30%, SHOW, {FontSize=0, FontColor=1, ShowStartingLights}
+Box22=SLIPSTREAM, CENTER, 20%, SHOW, {FontSize=0, FontColor=1, Zoom=1.00, ShowSlipStream}
+Box23=KERSDRS, 64.297623%, 65.733330%, HIDE, {FontSize=0, FontColor=1, ShowKersDrs}
+
+
+[HUD_TESTDAY_DEFAULT]
+=========================================================================================
+Box1=Pos, LEFT, TOP, SHOW, {FontSize=2, FontColor=0, ShowPlace}
+Box2=Grid, LEFT, 12.714844%, SHOW, {FontSize=0, FontColor=1, Zoom=1.00, MaxLengthName=16, Rows=30, NumDrivers=10, ShowGrid}
+Box3=Laps, RIGHT, 1%, SHOW, {FontSize=2, FontColor=0, ShowLaps}
+Box4=BEST, RIGHT, 6%, SHOW, {FontSize=0, FontColor=1, StopTimeForSeconds=10, MaxLengthName=11, ShowPersonalBestLap, ShowBestLap, ShowPersonalLastLap}
+Box5=CURRENT, RIGHT, 16%, SHOW, {FontSize=0, FontColor=1, MaxLengthName=11, ShowCurrentTime, ShowPersonalGap, ShowBestGap}
+Box6=SECTORS, 80.369049%, 49.542858%, HIDE, {FontSize=0, FontColor=1, MaxLengthName=8, ShowSectors}
+Box7=Timer, 39.9%, 0.0%, SHOW, {FontSize=0, FontColor=3, ShowTimer}
+Box8=LCD, CENTER, 63.733334%, SHOW, {FontSize=0, FontColor=1, ShowLCD}
+Box9=ATD, RIGHT, 60.9524%, SHOW, {FontSize=0, FontColor=1, DeltaTime=0.20%, ShowATD}
+Box10=TEMPS, RIGHT, 80%, SHOW, {FontSize=0, FontColor=1, ShowTemps}
+Box11=FUEL, LEFT, 80%, SHOW, {FontSize=0, FontColor=1, ShowFuel}
+Box13=KM, 40.640625%, 94.746094%, SHOW, {FontSize=0, FontColor=1, ShowKM}
+Box14=TIME, 40%, 2%, SHOW, {FontSize=0, FontColor=6, ShowLocalTime}
+Box15=MIXED, RIGHT, 40%, HIDE, {FontSize=0, FontColor=1, MaxLengthName=11, StopTimeForSeconds=10, ShowPersonalMixedSectorGap, ShowBestMixedSectorGap, ShowPersonalGap, ShowBestGap}
+Box16=WEAR, RIGHT, 28.000000%, SHOW, {FontSize=0, FontColor=1, ShowWear}
+Box17=WGL, CENTER, 10%, SHOW, {FontSize=0, FontColor=1, ShowWGL}
+Box18=METEO, 70%, 6%, HIDE, {FontSize=0, FontColor=1, ShowMeteo}
+Box19=BRAKETEMP, 20%, 1%, SHOW, {FontSize=0, FontColor=1, Zoom=1.00, ShowBrakeTyreTemp}
+Box20=BRAKETEST, 62%, 1%, SHOW, {FontSize=0, FontColor=1, Zoom=1.00, ShowBrakeTest}
+Box21=STARTINGLIGHT, CENTER, 30%, SHOW, {FontSize=0, FontColor=1, ShowStartingLights}
+Box22=SLIPSTREAM, CENTER, 20%, SHOW, {FontSize=0, FontColor=1, Zoom=1.00, ShowSlipStream}
+Box23=KERSDRS, 64.297623%, 65.733330%, HIDE, {FontSize=0, FontColor=1, ShowKersDrs}
+
+[HUD_PRACTICE_DEFAULT]
+=========================================================================================
+Box1=Pos, LEFT, TOP, SHOW, {FontSize=2, FontColor=0, ShowPlace}
+Box2=Grid, LEFT, 12.714844%, SHOW, {FontSize=0, FontColor=1, Zoom=1.00, MaxLengthName=16, Rows=30, NumDrivers=10, ShowGrid}
+Box3=Laps, RIGHT, 1%, SHOW, {FontSize=2, FontColor=0, ShowLaps}
+Box4=BEST, RIGHT, 6%, SHOW, {FontSize=0, FontColor=1, StopTimeForSeconds=10, MaxLengthName=11, ShowPersonalBestLap, ShowBestLap, ShowPersonalLastLap}
+Box5=CURRENT, RIGHT, 16%, SHOW, {FontSize=0, FontColor=1, MaxLengthName=11, ShowCurrentTime, ShowPersonalGap, ShowBestGap}
+Box6=SECTORS, 80.369049%, 49.542858%, HIDE, {FontSize=0, FontColor=1, MaxLengthName=8, ShowSectors}
+Box7=Timer, 39.9%, 0.0%, SHOW, {FontSize=0, FontColor=3, ShowTimer}
+Box8=LCD, CENTER, 63.733334%, SHOW, {FontSize=0, FontColor=1, ShowLCD}
+Box9=ATD, RIGHT, 60.9524%, SHOW, {FontSize=0, FontColor=1, DeltaTime=0.20%, ShowATD}
+Box10=TEMPS, RIGHT, 80%, SHOW, {FontSize=0, FontColor=1, ShowTemps}
+Box11=FUEL, LEFT, 80%, SHOW, {FontSize=0, FontColor=1, ShowFuel}
+Box13=KM, 40.640625%, 94.746094%, SHOW, {FontSize=0, FontColor=1, ShowKM}
+Box14=TIME, 40%, 2%, SHOW, {FontSize=0, FontColor=6, ShowLocalTime}
+Box15=MIXED, RIGHT, 40%, HIDE, {FontSize=0, FontColor=1, MaxLengthName=11, StopTimeForSeconds=10, ShowPersonalMixedSectorGap, ShowBestMixedSectorGap, ShowPersonalGap, ShowBestGap}
+Box16=WEAR, RIGHT, 28.000000%, SHOW, {FontSize=0, FontColor=1, ShowWear}
+Box17=WGL, CENTER, 10%, SHOW, {FontSize=0, FontColor=1, ShowWGL}
+Box18=METEO, 70%, 6%, HIDE, {FontSize=0, FontColor=1, ShowMeteo}
+Box19=BRAKETEMP, 20%, 1%, SHOW, {FontSize=0, FontColor=1, Zoom=1.00, ShowBrakeTyreTemp}
+Box20=BRAKETEST, 62%, 1%, SHOW, {FontSize=0, FontColor=1, Zoom=1.00, ShowBrakeTest}
+Box21=STARTINGLIGHT, CENTER, 30%, SHOW, {FontSize=0, FontColor=1, ShowStartingLights}
+Box22=SLIPSTREAM, CENTER, 20%, SHOW, {FontSize=0, FontColor=1, Zoom=1.00, ShowSlipStream}
+Box23=KERSDRS, 64.297623%, 65.733330%, HIDE, {FontSize=0, FontColor=1, ShowKersDrs}
+
+[HUD_QUALIFY_DEFAULT]
+=========================================================================================
+Box1=Pos, LEFT, TOP, SHOW, {FontSize=2, FontColor=0, ShowPlace}
+Box2=Grid, LEFT, 12.714844%, SHOW, {FontSize=0, FontColor=1, Zoom=1.00, MaxLengthName=16, Rows=30, NumDrivers=10, ShowGrid}
+Box3=Laps, RIGHT, 1%, SHOW, {FontSize=2, FontColor=0, ShowLaps}
+Box4=BEST, RIGHT, 6%, SHOW, {FontSize=0, FontColor=1, StopTimeForSeconds=10, MaxLengthName=11, ShowPersonalBestLap, ShowBestLap, ShowPersonalLastLap}
+Box5=CURRENT, RIGHT, 16%, SHOW, {FontSize=0, FontColor=1, MaxLengthName=11, ShowCurrentTime, ShowPersonalGap, ShowBestGap}
+Box6=SECTORS, 80.369049%, 49.542858%, HIDE, {FontSize=0, FontColor=1, MaxLengthName=8, ShowSectors}
+Box7=Timer, 39.9%, 0.0%, SHOW, {FontSize=0, FontColor=3, ShowTimer}
+Box8=LCD, CENTER, 63.733334%, SHOW, {FontSize=0, FontColor=1, ShowLCD}
+Box9=ATD, RIGHT, 60.9524%, SHOW, {FontSize=0, FontColor=1, DeltaTime=0.20%, ShowATD}
+Box10=TEMPS, RIGHT, 80%, SHOW, {FontSize=0, FontColor=1, ShowTemps}
+Box11=FUEL, LEFT, 80%, SHOW, {FontSize=0, FontColor=1, ShowFuel}
+Box13=KM, 40.640625%, 94.746094%, SHOW, {FontSize=0, FontColor=1, ShowKM}
+Box14=TIME, 40%, 2%, SHOW, {FontSize=0, FontColor=6, ShowLocalTime}
+Box15=MIXED, RIGHT, 40%, HIDE, {FontSize=0, FontColor=1, MaxLengthName=11, StopTimeForSeconds=10, ShowPersonalMixedSectorGap, ShowBestMixedSectorGap, ShowPersonalGap, ShowBestGap}
+Box16=WEAR, RIGHT, 28.000000%, SHOW, {FontSize=0, FontColor=1, ShowWear}
+Box17=WGL, CENTER, 10%, SHOW, {FontSize=0, FontColor=1, ShowWGL}
+Box18=METEO, 70%, 6%, HIDE, {FontSize=0, FontColor=1, ShowMeteo}
+Box19=BRAKETEMP, 20%, 1%, SHOW, {FontSize=0, FontColor=1, Zoom=1.00, ShowBrakeTyreTemp}
+Box20=BRAKETEST, 62%, 1%, SHOW, {FontSize=0, FontColor=1, Zoom=1.00, ShowBrakeTest}
+Box21=STARTINGLIGHT, CENTER, 30%, SHOW, {FontSize=0, FontColor=1, ShowStartingLights}
+Box22=SLIPSTREAM, CENTER, 20%, SHOW, {FontSize=0, FontColor=1, Zoom=1.00, ShowSlipStream}
+Box23=KERSDRS, 64.297623%, 65.733330%, HIDE, {FontSize=0, FontColor=1, ShowKersDrs}
+
+
+[HUD_WARMUP_DEFAULT]
+=========================================================================================
+Box1=Pos, LEFT, TOP, SHOW, {FontSize=2, FontColor=0, ShowPlace}
+Box2=Grid, LEFT, 12.714844%, SHOW, {FontSize=0, FontColor=1, Zoom=1.00, MaxLengthName=16, Rows=30, NumDrivers=10, ShowGrid}
+Box3=Laps, RIGHT, 1%, SHOW, {FontSize=2, FontColor=0, ShowLaps}
+Box4=BEST, RIGHT, 6%, SHOW, {FontSize=0, FontColor=1, StopTimeForSeconds=10, MaxLengthName=11, ShowPersonalBestLap, ShowBestLap, ShowPersonalLastLap}
+Box5=CURRENT, RIGHT, 16%, SHOW, {FontSize=0, FontColor=1, MaxLengthName=11, ShowCurrentTime, ShowPersonalGap, ShowBestGap}
+Box6=SECTORS, 80.369049%, 49.542858%, HIDE, {FontSize=0, FontColor=1, MaxLengthName=8, ShowSectors}
+Box7=Timer, 39.9%, 0.0%, SHOW, {FontSize=0, FontColor=3, ShowTimer}
+Box8=LCD, CENTER, 63.733334%, SHOW, {FontSize=0, FontColor=1, ShowLCD}
+Box9=ATD, RIGHT, 60.9524%, SHOW, {FontSize=0, FontColor=1, DeltaTime=0.20%, ShowATD}
+Box10=TEMPS, RIGHT, 80%, SHOW, {FontSize=0, FontColor=1, ShowTemps}
+Box11=FUEL, LEFT, 80%, SHOW, {FontSize=0, FontColor=1, ShowFuel}
+Box13=KM, 40.640625%, 94.746094%, SHOW, {FontSize=0, FontColor=1, ShowKM}
+Box14=TIME, 40%, 2%, SHOW, {FontSize=0, FontColor=6, ShowLocalTime}
+Box15=MIXED, RIGHT, 40%, HIDE, {FontSize=0, FontColor=1, MaxLengthName=11, StopTimeForSeconds=10, ShowPersonalMixedSectorGap, ShowBestMixedSectorGap, ShowPersonalGap, ShowBestGap}
+Box16=WEAR, RIGHT, 28.000000%, SHOW, {FontSize=0, FontColor=1, ShowWear}
+Box17=WGL, CENTER, 10%, SHOW, {FontSize=0, FontColor=1, ShowWGL}
+Box18=METEO, 70%, 6%, HIDE, {FontSize=0, FontColor=1, ShowMeteo}
+Box19=BRAKETEMP, 20%, 1%, SHOW, {FontSize=0, FontColor=1, Zoom=1.00, ShowBrakeTyreTemp}
+Box20=BRAKETEST, 62%, 1%, SHOW, {FontSize=0, FontColor=1, Zoom=1.00, ShowBrakeTest}
+Box21=STARTINGLIGHT, CENTER, 30%, SHOW, {FontSize=0, FontColor=1, ShowStartingLights}
+Box22=SLIPSTREAM, CENTER, 20%, SHOW, {FontSize=0, FontColor=1, Zoom=1.00, ShowSlipStream}
+Box23=KERSDRS, 64.297623%, 65.733330%, HIDE, {FontSize=0, FontColor=1, ShowKersDrs}
+
+[HUD_RACE_DEFAULT]
+=========================================================================================
+Box1=Pos, LEFT, TOP, SHOW, {FontSize=2, FontColor=0, ShowPlace}
+Box2=Grid, LEFT, 12.714844%, SHOW, {FontSize=0, FontColor=1, Zoom=1.00, MaxLengthName=16, Rows=30, NumDrivers=10, ShowGrid}
+Box3=Laps, RIGHT, 1%, SHOW, {FontSize=2, FontColor=0, ShowLaps}
+Box4=BEST, RIGHT, 6%, SHOW, {FontSize=0, FontColor=1, StopTimeForSeconds=10, MaxLengthName=11, ShowPersonalBestLap, ShowBestLap, ShowPersonalLastLap}
+Box5=CURRENT, RIGHT, 16%, SHOW, {FontSize=0, FontColor=1, MaxLengthName=11, ShowCurrentTime, ShowPersonalGap, ShowBestGap}
+Box6=SECTORS, 80.369049%, 49.542858%, HIDE, {FontSize=0, FontColor=1, MaxLengthName=8, ShowSectors}
+Box7=Timer, 39.9%, 0.0%, SHOW, {FontSize=0, FontColor=3, ShowTimer}
+Box8=LCD, CENTER, 63.733334%, SHOW, {FontSize=0, FontColor=1, ShowLCD}
+Box9=ATD, RIGHT, 60.9524%, SHOW, {FontSize=0, FontColor=1, DeltaTime=0.20%, ShowATD}
+Box10=TEMPS, RIGHT, 80%, SHOW, {FontSize=0, FontColor=1, ShowTemps}
+Box11=FUEL, LEFT, 80%, SHOW, {FontSize=0, FontColor=1, ShowFuel}
+Box13=KM, 40.640625%, 94.746094%, SHOW, {FontSize=0, FontColor=1, ShowKM}
+Box14=TIME, 40%, 2%, SHOW, {FontSize=0, FontColor=6, ShowLocalTime}
+Box15=MIXED, RIGHT, 40%, HIDE, {FontSize=0, FontColor=1, MaxLengthName=11, StopTimeForSeconds=10, ShowPersonalMixedSectorGap, ShowBestMixedSectorGap, ShowPersonalGap, ShowBestGap}
+Box16=WEAR, RIGHT, 28.000000%, SHOW, {FontSize=0, FontColor=1, ShowWear}
+Box17=WGL, CENTER, 10%, SHOW, {FontSize=0, FontColor=1, ShowWGL}
+Box18=METEO, 70%, 6%, HIDE, {FontSize=0, FontColor=1, ShowMeteo}
+Box19=BRAKETEMP, 20%, 1%, SHOW, {FontSize=0, FontColor=1, Zoom=1.00, ShowBrakeTyreTemp}
+Box20=BRAKETEST, 62%, 1%, SHOW, {FontSize=0, FontColor=1, Zoom=1.00, ShowBrakeTest}
+Box21=STARTINGLIGHT, CENTER, 30%, SHOW, {FontSize=0, FontColor=1, ShowStartingLights}
+Box22=SLIPSTREAM, CENTER, 20%, SHOW, {FontSize=0, FontColor=1, Zoom=1.00, ShowSlipStream}
+Box23=KERSDRS, 64.297623%, 65.733330%, HIDE, {FontSize=0, FontColor=1, ShowKersDrs}

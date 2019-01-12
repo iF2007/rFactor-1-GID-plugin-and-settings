@@ -1,0 +1,37 @@
+[WGL]
+
+HeightNormalColor = FF0CB12D
+HeightAlarmColor  = FFFF0007 
+MidHeightAlarmColor = FFFFFF0C
+MinHeight = 0.0
+PieColor    =  FFFF0000
+
+.MODE=COLOR
+MODE=PIE
+HeightAlarmMode=FIXED
+
+MinGrip = 0.0
+MaxGrip =1.000000
+MinHeight = 2.0
+MidHeight = 5.0
+MaxHeight = 10.0
+
+
+[ELEMENTS]
+
+WGL = T, 131, 8, 93, 93, P, 0, 0
+
+FrontLeftWheelSwl  = T, 9, 10 , 43, 43,  P,  45, 45
+FrontRightWheelSwl = T, 54, 10 , 43, 43, P,  48, 45 
+RearLeftWheelSwl   = T, 9, 55, 43, 43,   P,  45, 48
+RearRightWheelSwl  = T, 54, 55 , 43, 43, P,  48, 48
+
+FrontLeftWheelHeight  = T, 266, 8, 12, 12, P, 0, 0,  F
+FrontRightWheelHeight = T, 266, 8, 12, 12, P, 81, 0, F 
+RearLeftWheelHeight   = T, 266, 8, 12, 12, P, 0, 81,  F
+RearRightWheelHeight  = T, 266, 8, 12, 12, P, 81, 81, F
+
+FrontLeftWheelLock  = T, 249, 91, 32, 10, P, 10, 33
+FrontRightWheelLock = T, 249, 91, 32, 10, P, 52, 33
+RearLeftWheelLock   = T, 249, 91, 32, 10, P, 10, 50
+RearRightWheelLock  = T, 249, 91, 32, 10, P, 52, 50

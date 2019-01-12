@@ -1,0 +1,10 @@
+[KM]
+#3_-_19._hcehce419=0.000000
+#4_-_34._Reserve=363.275360
+#1_-_21._lovepes2010=365.697937
+[KM_TRACKS]
+#3_-_19._hcehce419[Red_Bull_Ring]=0.000000
+#4_-_34._Reserve[Red_Bull_Ring]=20.416870
+#4_-_34._Reserve[Nuerburg_GP]=25.432980
+#4_-_34._Reserve[Suzuka_International_Racing_Course]=317.425812
+#1_-_21._lovepes2010[Yas_Marina_Circuit]=365.697937

@@ -1,0 +1,27 @@
+[BRAKETEST]
+
+maxSpeed = 250
+minSpeed = 10
+
+
+[ELEMENTS]
+
+Icon = T, 0, 0, 227, 77, P, 0, 0
+
+ForceFrontLeftWheel  = T, 0, 119, 11, 17, P,  47, 21
+ForceFrontRightWheel = T, 0, 119, 11, 17, P,  92, 21
+ForceRearLeftWheel   = T, 0, 119, 11, 17, P,  47, 57
+ForceRearRightWheel  = T, 0, 119, 11, 17, P,  92, 57
+
+
+.ForceAnt    = T, 0, 119, 11, 17, P,  168, 21
+.ForceRear   = T, 0, 119, 11, 17, P,  168, 57
+ForceCenter = T, 0, 153, 11, 17, P,  69, 39
+
+Distance = T, 0, 119, 11, 17, P,  205, 21
+Time     = T, 0, 119, 11, 17, P,  205, 57
+
+PercentageForceFront = T, 0, 119, 11, 17, P,  145, 21
+PercentageForceRear  = T, 0, 119, 11, 17, P,  145, 57
+
+Acceleration = T, 0, 153, 11, 17, P,  148, 39 

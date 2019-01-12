@@ -1,0 +1,12 @@
+[ATD]
+
+
+[ELEMENTS]
+// Rect border of elements inside Texture
+// Name = X, Y, Width, Height
+// For Font Width and Height refers to a single dimension char.
+
+ATD = T, 0, 0, 152, 100, P, 0, 0
+
+
+

@@ -1,0 +1,101 @@
+[LCD]
+
+//LINEAR or CENTER
+MODE = CENTER
+.MODE = LINEAR
+
+ON = 100
+OFF = 100
+
+//LEDICONS  or  RpmIcon 
+.UseIcon =RpmIcon
+UseIcon =LEDICONS
+
+
+[ELEMENTS]
+// Rect border of elements inside Texture
+// Name = X, Y, Width, Height
+// For Font Width and Height refers to a single dimension char.
+
+LCD = T, 535, 45, 353, 138, P, 0, 0
+BRAKE    =  T, 0, 278, 193, 17, P, 107, 102, HLR, V,  0, 1
+THROTTLE =  T, 0, 259, 193, 17, P, 107, 85, HLR, V,  0, 1
+
+.STEERING =  T, 449, 208, 110,  6, P, 250, 140,  C, V, -1, 1 
+
+Speed = T, 0, 400, 25, 38, P, 194, 43
+KphMphIcon = T, 426, 348, 56, 10, P, 194, 70 
+
+MaxSpeed = T, 0, 167, 11, 17, P, 85, 102 
+  
+Gear = T, 0, 0, 37, 52, P, 50, 45  
+.Gear = T, 0, 0, 37, 52, P, 50, 50  
+
+Rpm  = T, 0, 150, 11, 17, P, 95, 19 
+
+LedPersonal = T, 475, 220, 34, 41, P, 334, 19 
+LedBest = T, 475, 267, 34, 41, P, 334, 78  
+
+MiniTempIcon = T, 782, 224, 60, 20, P, 5, 38
+MiniFuelIcon = T, 782, 265, 60, 20, P, 5, 82 
+
+.Km = T, 0, 193, 11, 17, P, 0, 0
+.Trip = T, 0, 193, 11, 17, P, 0, 0
+ 
+TimePersonal = T, 0, 448, 9, 14, P, 297, 44
+TimeBest = T, 0, 448, 9, 14, P, 297, 68
+
+GapPreviousCar = T, 0, 448, 9, 14, P, 212, 2
+GapNextCar = T, 0, 448, 9, 14, P, 212, 122
+
+
+LedArrowUp   = T, 411, 228, 36, 26, P, 308, 28 
+LedArrowDown = T, 411, 273, 36, 26, P, 308, 87
+LedYellow = T, 408, 260, 24, 7, P, 7, 70  
+
+.WarningIcon = T, 775, 307, 40, 45, P, 0, 0
+
+.MiniATDIcon = T, 708, 381, 76, 50, P, 0, 0  
+
+RpmIcon = T, 0, 237, 193, 20, P, 107, 19, HLR   
+RpmSymmetricalIcon = T, 0, 214, 193, 20, P, 107, 19, HEI  
+
+
+LEDICONS = T, 247, 233, 70, 14, W, 14
+
+
+//......................
+
+
+[POSITIONS]	
+// Position Relative to LCD upper Left corner
+//FORMAT: // Element = X0, Y0  . Where X0 and Y0 are relative to LCD Position
+
+
+LED0  = 111, 21, 1, 5%
+LED1  = 128, 21, 1, 35%
+LED2  = 145, 21, 1, 50.5%
+LED3  = 162, 21, 1, 61%
+LED4  = 179, 21, 2, 69%
+LED5  = 196, 21, 2, 75.5%
+LED6  = 213, 21, 2, 81%
+LED7  = 230, 21, 3, 85.5%
+LED8  = 247, 21, 3, 89.6%
+LED9  = 264, 21, 4, 93.2%
+LED10 = 281, 21, 4, 96.5%
+
+
+
+LEDSYM0  = 111, 21,  1, 10%
+LEDSYM1  = 128, 21,  2, 52%
+LEDSYM2  = 145, 21,  3, 70%
+LEDSYM3  = 162, 21,  3, 81%
+LEDSYM4  = 179, 21,  4, 90%
+LEDSYM5  = 196, 21,  4, 96.5%
+LEDSYM6  = 213, 21,  4, 90%
+LEDSYM7  = 230, 21,  3, 81%
+LEDSYM8  = 247, 21,  3, 70%
+LEDSYM9  = 264, 21,  2, 52%
+LEDSYM10 = 281, 21,  1, 10%
+
+

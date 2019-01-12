@@ -1,0 +1,15 @@
+[TEMP]
+
+
+
+[ELEMENTS]
+// Rect border of elements inside Texture
+// Name = X, Y, Width, Height
+// For Font Width and Height refers to a single dimension char.
+
+TempIcon = T, 0, 0, 129, 124, P, 0, 0
+
+Temp.Water = T, 0, 136, 11, 17, P, 37, 21
+Temp.Oil   = T, 0, 136, 11, 17, P , 82, 21
+
+

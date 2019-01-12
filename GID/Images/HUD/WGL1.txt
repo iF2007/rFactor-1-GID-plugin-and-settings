@@ -1,0 +1,49 @@
+[WGL]
+
+HeightNormalColor = FF0CB12D
+HeightAlarmColor  = FFFF0007 
+MidHeightAlarmColor  = FFFFFF0C 
+PieColor    =  FFFF0000
+
+.MODE= COLOR or PIE
+MODE=PIE
+
+.HeightAlarmMode=FIXED
+
+MinGrip = 0.0
+MaxGrip =1.000000
+MinHeight = 2.0
+MidHeight = 5.0
+MaxHeight = 10.0
+
+
+[ELEMENTS]
+
+WGL = T, 112, 8, 131, 93, P, 0, 0
+
+.CarLoad = T, 332, 10, 12, 90, P, -40, 0, VAIE
+
+FrontLeftWheelSwl  = T, 9, 10 , 43, 43,  P, 64, 45
+FrontRightWheelSwl = T, 54, 10 , 43, 43, P, 67, 45  
+RearLeftWheelSwl   = T, 9, 55, 43, 43,   P, 64, 48
+RearRightWheelSwl  = T, 54, 55 , 43, 43, P, 67, 48
+
+.FrontLeftWheelSwl  = T, 9, 10 , 43, 43,  P, 20, 2
+.FrontRightWheelSwl = T, 54, 10 , 43, 43, P, 67, 2  
+.RearLeftWheelSwl   = T, 9, 55, 43, 43,   P, 20, 48
+.RearRightWheelSwl  = T, 54, 55 , 43, 43, P, 67, 48
+
+
+FrontLeftWheelHeight  = T, 250, 8, 12, 40, P, 5, 0, VDU
+FrontRightWheelHeight = T, 250, 8, 12, 40, P, 114, 0, VDU 
+RearLeftWheelHeight   = T, 250, 8, 12, 40, P, 5, 52, VDU
+RearRightWheelHeight  = T, 250, 8, 12, 40, P, 114, 52, VDU
+
+FrontLeftWheelLock  = T, 249, 91, 32, 10, P, 28, 33, F
+FrontRightWheelLock = T, 249, 91, 32, 10, P, 71, 33, F
+RearLeftWheelLock   = T, 249, 91, 32, 10, P, 28, 50, F
+RearRightWheelLock  = T, 249, 91, 32, 10, P, 71, 50, F                   
+
+
+
+

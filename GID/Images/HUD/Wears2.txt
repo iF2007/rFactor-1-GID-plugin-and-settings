@@ -1,0 +1,35 @@
+[WEARS]
+
+//Delta Esterna-Centro, Centro-Esterna
+DeltaPressureShape =  5, 5
+
+[ELEMENTS]
+
+Car = T, 149, 8, 140, 89, P, 0, 0
+
+.Engine = T, 0, 0, 0, 0, P, 0, 0
+
+WearEngineIcon = T, 66,2,55,30, P, 43, 26 
+
+FrontLeftWheel  = T, 1, 38, 148, 24, P,  7, 5
+FrontRightWheel = T, 1, 38, 148, 24, P, 97, 5
+RearLeftWheel = T, 1 , 86, 148, 24, P,  7, 60
+RearRightWheel = T, 1 , 86, 148, 24, P, 97, 60
+
+
+TempFrontLeftWheel  = T, 0, 0, 0, 0, P, 0, 0
+TempFrontRightWheel = T, 0, 0, 0, 0, P, 0, 0
+TempRearLeftWheel   = T, 0, 0, 0, 0, P, 0, 0
+TempRearRightWheel  = T, 0, 0, 0, 0, P, 0, 0
+
+WearFrontLeftWheel  = T, 15, 12, 29, 10, P,  11, 19, HLR
+WearFrontRightWheel = T, 15, 12, 29, 10, P, 101, 19 , HLR
+WearRearLeftWheel  = T, 15, 12, 29, 10, P,  11, 59, HLR
+WearRearRightWheel = T, 15, 12, 29, 10, P, 101, 59 , HLR
+
+
+WearEngineNumeric    = T, 10, 158, 9, 13, P,  56, 36
+WearEngineNumericRed = T, 10, 158, 9, 13, P,  56, 36
+
+
+
