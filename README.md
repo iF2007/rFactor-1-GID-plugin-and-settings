@@ -1,0 +1,1 @@
+# rFactor-1-GID-plugin-settings
