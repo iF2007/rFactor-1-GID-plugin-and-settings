@@ -47,10 +47,10 @@ VerticalAlign = Top
 HorizontalAlign = Left
 
 //OffsetX: in Pixel
-OffsetX =0.000000%
+OffsetX =0.976563%
 
 //OffsetY: in Pixel
-OffsetY =43.611111%
+OffsetY =41.232639%
 
 //MapWidth in Pixel
 MapWidth =384
@@ -288,7 +288,7 @@ Grid_Classes4  = P2, ES_P2, #P2
 
 DRSFile = rF1_2011.rfm
 
-.Velocit‡ minima in Km/h sotto la quale il KERS non Ë attivabile
+.Velocit√† minima in Km/h sotto la quale il KERS non √® attivabile
 KersMinSpeed = 0
 
 DRSBrakeLevel = 0.55
@@ -299,7 +299,7 @@ DRSBrakeLevel = 0.55
 Box21=STARTINGLIGHT, 45.867188%, 2.513889%, SHOW, {FontSize=0, FontColor=1, ShowStartingLights}
 Box1=Pos, LEFT, TOP, SHOW, {FontSize=3, FontColor=0, ShowPlace}
 Box2=Grid, 0.125000%, 9.527778%, SHOW, {FontSize=2, FontColor=1, MaxLengthName=16, Rows=30, NumDrivers=10, ShowGrid}
-Box3=Laps, 91.921875%, 0.986111%, SHOW, {FontSize=3, FontColor=0, ShowLaps}
+Box3=Laps, 90.244141%, 0.885417%, SHOW, {FontSize=3, FontColor=0, ShowLaps}
 Box4=BEST, 86.179688%, 5.083333%, SHOW, {FontSize=2, FontColor=1, MaxLengthName=11, ShowPersonalBestLap, ShowBestLap, ShowPersonalLastLap}
 Box5=CURRENT, 86.257813%, 12.791667%, SHOW, {FontSize=2, FontColor=1, MaxLengthName=11, StopTimeForSeconds=9, ShowCurrentTime, ShowPersonalGap, ShowBestGap}
 Box6=SECTORS, 81.882813%, 69.458336%, SHOW, {FontSize=2, FontColor=1, MaxLengthName=8, ShowSectors}
@@ -314,7 +314,7 @@ Box15=MIXED, 86.257813%, 20.361111%, SHOW, {FontSize=2, FontColor=1, MaxLengthNa
 Box16=WEAR, 93.406250%, 32.444443%, SHOW, {FontSize=3, FontColor=1, ShowWear}
 Box17=WGL, 47.273438%, 9.736111%, HIDE, {FontSize=0, FontColor=1, ShowWGL}
 Box18=METEO, 69.929688%, 5.569443%, HIDE, {FontSize=0, FontColor=1, ShowMeteo}
-Box19=BRAKETEMP, 29.695313%, 0.013889%, SHOW, {FontSize=3, FontColor=1, ShowBrakeTyreTemp}
+Box19=BRAKETEMP, 29.695313%, 0.013885%, SHOW, {FontSize=3, FontColor=1, ShowBrakeTyreTemp}
 Box20=BRAKETEST, 61.882813%, 0.013889%, SHOW, {FontSize=2, FontColor=1, ShowBrakeTest}
 Box22=SLIPSTREAM, 48.835938%, 19.458334%, HIDE, {FontSize=0, FontColor=1, ShowSlipStream}
 Box23=KERSDRS, 64.297623%, 65.733330%, HIDE, {FontSize=0, FontColor=1, ShowKersDrs}
@@ -429,23 +429,23 @@ Box1=Pos, LEFT, TOP, SHOW, {FontSize=3, FontColor=0, ShowPlace}
 Box2=Grid, 0.125000%, 9.527778%, SHOW, {FontSize=2, FontColor=1, MaxLengthName=16, Rows=30, NumDrivers=10, ShowGrid}
 Box3=Laps, 91.921875%, 0.986111%, SHOW, {FontSize=3, FontColor=0, ShowLaps}
 Box4=BEST, 86.179688%, 5.083333%, SHOW, {FontSize=2, FontColor=1, MaxLengthName=11, ShowPersonalBestLap, ShowBestLap, ShowPersonalLastLap}
-Box5=CURRENT, 86.257813%, 12.791667%, SHOW, {FontSize=2, FontColor=1, MaxLengthName=11, StopTimeForSeconds=9, ShowCurrentTime, ShowPersonalGap, ShowBestGap}
+Box5=CURRENT, 86.257813%, 12.791664%, HIDE, {FontSize=2, FontColor=1, MaxLengthName=11, StopTimeForSeconds=9, ShowCurrentTime, ShowPersonalGap, ShowBestGap}
 Box6=SECTORS, 81.882813%, 69.458336%, SHOW, {FontSize=2, FontColor=1, MaxLengthName=8, ShowSectors}
 Box7=Timer, 43.484375%, 0.013889%, SHOW, {FontSize=2, FontColor=3, ShowTimer}
-Box8=LCD, 42.976563%, 63.208332%, HIDE, {FontSize=0, FontColor=1, ShowLCD}
+Box8=LCD, 42.976563%, 63.208328%, HIDE, {FontSize=0, FontColor=1, ShowLCD}
 Box9=ATD, 89.070313%, 58.347214%, HIDE, {FontSize=2, FontColor=1, DeltaTime=0.20%, ShowATD}
 Box10=TEMPS, 70.867188%, 3.347222%, SHOW, {FontSize=3, FontColor=1, ShowTemps}
 Box11=FUEL, 70.945313%, 0.013889%, SHOW, {FontSize=2, FontColor=1, ShowFuel}
-Box13=KM, 86.882813%, 59.527779%, SHOW, {FontSize=2, FontColor=1, ShowKM}
+Box13=KM, 86.882813%, 63.277779%, SHOW, {FontSize=2, FontColor=1, ShowKM}
 Box14=TIME, 82.820313%, 0.777778%, SHOW, {FontSize=3, FontColor=6, ShowLocalTime}
-Box15=MIXED, 86.257813%, 20.361111%, SHOW, {FontSize=2, FontColor=1, MaxLengthName=11, StopTimeForSeconds=10, ShowPersonalMixedSectorGap, ShowBestMixedSectorGap, ShowPersonalGap, ShowBestGap}
-Box16=WEAR, 93.406250%, 32.444443%, SHOW, {FontSize=3, FontColor=1, ShowWear}
-Box17=WGL, 47.273438%, 9.736111%, HIDE, {FontSize=0, FontColor=1, ShowWGL}
+Box15=MIXED, 86.140625%, 14.527778%, SHOW, {FontSize=2, FontColor=1, MaxLengthName=11, StopTimeForSeconds=10, ShowPersonalMixedSectorGap, ShowBestMixedSectorGap, ShowPersonalGap, ShowBestGap}
+Box16=WEAR, 93.679688%, 46.125000%, SHOW, {FontSize=3, FontColor=1, ShowWear}
+Box17=WGL, 47.273438%, 9.736115%, HIDE, {FontSize=0, FontColor=1, ShowWGL}
 Box18=METEO, 69.929688%, 5.569443%, HIDE, {FontSize=0, FontColor=1, ShowMeteo}
-Box19=BRAKETEMP, 29.695313%, 0.013889%, SHOW, {FontSize=3, FontColor=1, ShowBrakeTyreTemp}
+Box19=BRAKETEMP, 29.695313%, 0.013885%, SHOW, {FontSize=3, FontColor=1, ShowBrakeTyreTemp}
 Box20=BRAKETEST, 61.882813%, 0.013889%, SHOW, {FontSize=2, FontColor=1, ShowBrakeTest}
-Box22=SLIPSTREAM, 48.835938%, 19.458334%, HIDE, {FontSize=0, FontColor=1, ShowSlipStream}
-Box23=KERSDRS, 64.297623%, 65.733330%, HIDE, {FontSize=0, FontColor=1, ShowKersDrs}
+Box22=SLIPSTREAM, 48.835938%, 19.458336%, HIDE, {FontSize=0, FontColor=1, ShowSlipStream}
+Box23=KERSDRS, 64.297623%, 65.733337%, HIDE, {FontSize=0, FontColor=1, ShowKersDrs}
 
 
 
